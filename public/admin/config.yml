@@ -1,0 +1,47 @@
+backend:
+  name: github
+  repo: Poorya-Zare/poorya-zare.github.io
+  branch: main
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "portfolio"
+    label: "Portfolio"
+    files:
+      - name: "site_content"
+        label: "Website Content"
+        file: "content/site.yml"
+        fields:
+          - label: "Full Name"
+            name: "full_name"
+            widget: "string"
+
+          - label: "Professional Title"
+            name: "professional_title"
+            widget: "string"
+
+          - label: "About Me"
+            name: "about"
+            widget: "text"
+
+          - label: "Projects"
+            name: "projects"
+            widget: "list"
+            fields:
+              - label: "Project Title"
+                name: "title"
+                widget: "string"
+
+              - label: "Description"
+                name: "description"
+                widget: "text"
+
+              - label: "Technologies"
+                name: "technologies"
+                widget: "list"
+                field:
+                  label: "Technology"
+                  name: "technology"
+                  widget: "string"

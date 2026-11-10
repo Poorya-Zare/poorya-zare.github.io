@@ -1,0 +1,37 @@
+full_name: "Poorya Zare Janakbari"
+
+professional_title: "AI Researcher | Cybersecurity | Computer Vision"
+
+about: >-
+  I am an AI and cybersecurity researcher studying at the
+  University of Eastern Finland. My research interests include
+  computer vision, adversarial machine learning, deep learning,
+  and the security of autonomous systems.
+
+projects:
+  - title: "Deepfake Detection"
+    description: >-
+      Detection and mitigation of deepfake attacks using
+      computer vision and deep learning.
+    technologies:
+      - "Python"
+      - "EfficientNet"
+      - "Deep Learning"
+
+  - title: "UAV Vision-Language-Action Security"
+    description: >-
+      Investigating the influence of physical directional signs
+      on autonomous UAV navigation models in simulation.
+    technologies:
+      - "AeroVLA"
+      - "Simulation"
+      - "AI Safety"
+
+  - title: "Adversarial Robustness Research"
+    description: >-
+      Evaluating the robustness of AI-powered autonomous systems
+      against adversarial conditions.
+    technologies:
+      - "Adversarial ML"
+      - "Cybersecurity"
+      - "Evaluation"
