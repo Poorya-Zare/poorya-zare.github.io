@@ -2,9 +2,13 @@ backend:
   name: github
   repo: Poorya-Zare/poorya-zare.github.io
   branch: main
+  base_url: https://poorya-portfolio-auth.pooryazare-2019.workers.dev
+  auth_endpoint: auth
 
 media_folder: "public/uploads"
 public_folder: "/uploads"
+
+publish: true
 
 collections:
   - name: "portfolio"
@@ -17,18 +21,22 @@ collections:
           - label: "Full Name"
             name: "full_name"
             widget: "string"
+            required: true
 
           - label: "Professional Title"
             name: "professional_title"
             widget: "string"
+            required: true
 
           - label: "About Me"
             name: "about"
             widget: "text"
+            required: false
 
           - label: "Projects"
             name: "projects"
             widget: "list"
+            required: false
             fields:
               - label: "Project Title"
                 name: "title"
@@ -41,6 +49,7 @@ collections:
               - label: "Technologies"
                 name: "technologies"
                 widget: "list"
+                required: false
                 field:
                   label: "Technology"
                   name: "technology"
