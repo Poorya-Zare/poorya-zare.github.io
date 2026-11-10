@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.DS_Store
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Local project archives
+*.zip
