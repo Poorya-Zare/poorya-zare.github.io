@@ -94,6 +94,16 @@ projects:
     status: completed
     technologies:
       - Python Apache Spark PySpark MongoDB Spark SQL Pandas Matplotlib
+  - title: Shaker AI — AI-Powered Virtual Bartender
+    category: GENERATIVE AI / MACHINE LEARNING
+    description: Shaker AI is an AI-powered virtual bartender designed to generate
+      personalized drink suggestions and cocktail recipes based on user
+      requests. The project demonstrates an interactive application of natural
+      language generation and is available through Hugging Face Spaces.
+    technologies: []
+    demo_url: https://huggingface.co/spaces/Poorya-Zare/Shaker_AI
+    cover: /uploads/neon-shaker-ai-bartender.png
+    status: completed
 research_publications:
   - title: Application of Artificial Intelligence for Prediction, Diagnosis and
       Treatment of Infectious Diseases
