@@ -65,6 +65,7 @@ projects:
     technologies:
       - Python FastAPI PostgreSQL Redis React Docker
     cover: /uploads/eye-of-sauron-cybersecurity-dashboard.png
+    status: in_progress
 research_publications:
   - title: Application of Artificial Intelligence for Prediction, Diagnosis and
       Treatment of Infectious Diseases
