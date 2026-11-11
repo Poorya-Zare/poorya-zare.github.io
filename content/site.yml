@@ -45,6 +45,7 @@ projects:
       - AeroVLA
       - Simulation
       - AI Safety
+    cover: /uploads/cyberpunk-drone-security-hud.png
   - title: Adversarial Robustness Research
     category: CYBERSECURITY / RESEARCH
     description: Evaluating the robustness of AI-powered autonomous systems against
