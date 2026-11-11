@@ -1,37 +1,31 @@
-full_name: "Poorya Zare Janakbari"
-
-professional_title: "AI Researcher | Cybersecurity | Computer Vision"
-
-about: >-
-  I am an AI and cybersecurity researcher studying at the
-  University of Eastern Finland. My research interests include
-  computer vision, adversarial machine learning, deep learning,
-  and the security of autonomous systems.
-
+full_name: Poorya Zare Janakbari
+professional_title: AI Researcher | Cybersecurity | Computer Vision
+about: "MSc student in Information Technology at the University of Eastern
+  Finland, researching the security and robustness of vision-language-action
+  models for autonomous UAV navigation. My work focuses on measurement-driven,
+  reproducible evaluation: designing controlled experiments, quantifying
+  uncertainty, and separating real attack effects from system variability. With
+  a background in IT management and applied machine learning, I aim to
+  contribute rigorous, practical research on trustworthy AI for robotics."
 projects:
-  - title: "Deepfake Detection"
-    description: >-
-      Detection and mitigation of deepfake attacks using
-      computer vision and deep learning.
+  - title: Deepfake Detection
+    description: Detection and mitigation of deepfake attacks using computer vision
+      and deep learning.
     technologies:
-      - "Python"
-      - "EfficientNet"
-      - "Deep Learning"
-
-  - title: "UAV Vision-Language-Action Security"
-    description: >-
-      Investigating the influence of physical directional signs
-      on autonomous UAV navigation models in simulation.
+      - Python
+      - EfficientNet
+      - Deep Learning
+  - title: UAV Vision-Language-Action Security
+    description: Investigating the influence of physical directional signs on
+      autonomous UAV navigation models in simulation.
     technologies:
-      - "AeroVLA"
-      - "Simulation"
-      - "AI Safety"
-
-  - title: "Adversarial Robustness Research"
-    description: >-
-      Evaluating the robustness of AI-powered autonomous systems
-      against adversarial conditions.
+      - AeroVLA
+      - Simulation
+      - AI Safety
+  - title: Adversarial Robustness Research
+    description: Evaluating the robustness of AI-powered autonomous systems against
+      adversarial conditions.
     technologies:
-      - "Adversarial ML"
-      - "Cybersecurity"
-      - "Evaluation"
+      - Adversarial ML
+      - Cybersecurity
+      - Evaluation
