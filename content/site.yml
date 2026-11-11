@@ -35,6 +35,8 @@ projects:
       - Python
       - EfficientNet
       - Deep Learning
+    status: completed
+    cover: /uploads/deepfake-detection_-real-vs.-glitched.png
   - title: UAV Vision-Language-Action Security
     category: AUTONOMOUS SYSTEMS / AI SAFETY
     description: Investigating the influence of physical directional signs on
