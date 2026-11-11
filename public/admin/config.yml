@@ -91,6 +91,7 @@ collections:
                   { label: "Technology", name: "technology", widget: "string" }
               - { label: "Project Cover", name: "cover", widget: "image", required: false }
               - { label: "GitHub URL", name: "github_url", widget: "string", required: false }
+              - { label: "Live Demo URL", name: "demo_url", widget: "string", required: false }
               - { label: "Paper / Report URL", name: "paper_url", widget: "string", required: false }
               - { label: "PDF Report", name: "pdf", widget: "file", required: false }
               - label: "Project Status"

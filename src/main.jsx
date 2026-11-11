@@ -101,6 +101,7 @@ const portfolio = {
         cover: safeLink(project.cover),
         githubUrl: safeLink(project.github_url),
         paperUrl: safeLink(project.paper_url),
+        demoUrl: safeLink(project.demo_url),
         pdf: safeLink(project.pdf),
         status: project.status || "",
       }))
@@ -527,8 +528,9 @@ function App() {
                     {({completed:"COMPLETED",in_progress:"IN PROGRESS",planned:"PLANNED"})[project.status] || project.status.toUpperCase()}
                   </div>
                 )}
-                {(project.githubUrl || project.paperUrl || project.pdf) && (
+                {(project.githubUrl || project.paperUrl || project.pdf || project.demoUrl) && (
                   <div style={{ display: "flex", flexWrap: "wrap", gap: "16px", marginTop: "16px" }}>
+                    {project.demoUrl && <a href={project.demoUrl} target="_blank" rel="noopener noreferrer" aria-label="Open Live Demo">LIVE DEMO ↗</a>}
                     {project.githubUrl && <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">GITHUB ↗</a>}
                     {project.paperUrl && <a href={project.paperUrl} target="_blank" rel="noopener noreferrer">PAPER / REPORT ↗</a>}
                     {project.pdf && <a href={project.pdf} target="_blank" rel="noopener noreferrer">PDF ↗</a>}
