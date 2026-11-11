@@ -1,12 +1,15 @@
 full_name: Poorya Zare Janakbari
 professional_title: AI Researcher | Cybersecurity | Computer Vision
 about: "MSc student in Information Technology at the University of Eastern
-  Finland, researching the security and robustness of vision-language-action
-  models for autonomous UAV navigation. My work focuses on measurement-driven,
-  reproducible evaluation: designing controlled experiments, quantifying
-  uncertainty, and separating real attack effects from system variability. With
-  a background in IT management and applied machine learning, I aim to
-  contribute rigorous, practical research on trustworthy AI for robotics."
+  Finland, working on the reliability and security of AI systems that act in the
+  physical world. My research focuses on vision-language and
+  vision-language-action models for robotics and autonomous UAVs, with an
+  emphasis on careful, reproducible evaluation: understanding how these models
+  behave when their inputs change, and when their decisions can be trusted. I am
+  broadly interested in trustworthy multimodal AI and in building autonomous
+  systems that remain dependable in new and unexpected conditions. A background
+  in IT management and applied machine learning gives me a practical,
+  evidence-driven approach to research."
 projects:
   - title: Deepfake Detection
     description: Detection and mitigation of deepfake attacks using computer vision
