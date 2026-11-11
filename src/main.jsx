@@ -163,7 +163,10 @@ function Publications() {
                   {paper.year || "PUBLICATION"} / PUBLISHED
                 </div>
 
-                {paper.authors && (
+                                {paper.publication_venue && (<p style={{ minHeight: 0, margin: 0 }}>Conference / Journal: {paper.publication_venue}</p>)}
+                {paper.publisher && (<p style={{ minHeight: 0, margin: 0 }}>Publisher: {paper.publisher}</p>)}
+
+{paper.authors && (
                   <p style={{ minHeight: 0, margin: 0 }}>{paper.authors}</p>
                 )}
 
