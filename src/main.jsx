@@ -157,7 +157,7 @@ function Publications() {
                   <FileText size={20} />
                 </div>
 
-                <div className="project-tag">
+                <div className="project-tag" style={{ textAlign: "left", alignSelf: "flex-start", width: "100%" }}>
                   {paper.year || "PUBLICATION"} / PUBLISHED
                 </div>
 
@@ -498,7 +498,7 @@ function App() {
                   <div className="visual-cross cross-b">+</div>
                 </div>
 
-                <div className="project-tag">{project.tag}</div>
+                <div className="project-tag" style={{ textAlign: "left", alignSelf: "flex-start", width: "100%" }}>{project.tag}</div>
 
                 <h3>{project.title}</h3>
                 <p>{project.desc}</p>
