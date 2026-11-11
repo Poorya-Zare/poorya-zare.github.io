@@ -45,6 +45,7 @@ projects:
       - AeroVLA
       - Simulation
       - AI Safety
+      - null
     cover: /uploads/cyberpunk-drone-security-hud.png
     status: completed
   - title: Adversarial Robustness Research
@@ -55,6 +56,15 @@ projects:
       - Adversarial ML
       - Cybersecurity
       - Evaluation
+  - title: Eye of Sauron — AI-Augmented Security Platform
+    description: A modular cybersecurity platform combining security event
+      monitoring, intrusion detection, and authorization-controlled asset
+      assessment. Built with FastAPI, PostgreSQL, Redis, and React, with a focus
+      on secure architecture, auditability, and future AI-assisted security
+      analysis.
+    technologies:
+      - Python FastAPI PostgreSQL Redis React Docker
+    cover: /uploads/eye-of-sauron-cybersecurity-dashboard.png
 research_publications:
   - title: Application of Artificial Intelligence for Prediction, Diagnosis and
       Treatment of Infectious Diseases
