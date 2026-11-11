@@ -61,6 +61,14 @@ research_publications:
     publication_venue: 2025 International Conference on Control, Automation and Diagnosis (ICCAD)
     publisher: IEEE
     authors: Poorya Zare Janakbari
+  - type: bachelors_thesis
+    title: "Detection and Mitigation of Deepfake Attacks in Cybersecurity :
+      Leveraging Computer Vision and Deep Learning"
+    authors: Poorya Zare Janakbari
+    year: 2025
+    status: published
+    paper_url: https://urn.fi/URN:NBN:fi:amk-2025060721436?utm_source=chatgpt.com
+    publication_venue: Häme University of Applied Sciences (HAMK)
 skills:
   - PYTHON
   - PYTORCH
