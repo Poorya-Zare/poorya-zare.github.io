@@ -157,11 +157,11 @@ function Publications() {
                   <FileText size={20} />
                 </div>
 
-                <div className="project-tag" style={{ textAlign: "left", alignSelf: "flex-start", width: "100%" }}>
+                <h3 style={{ margin: "4px 0" }}>{paper.title}</h3>
+
+<div className="project-tag" style={{ textAlign: "left", alignSelf: "flex-start", width: "100%" }}>
                   {paper.year || "PUBLICATION"} / PUBLISHED
                 </div>
-
-                <h3 style={{ margin: "4px 0" }}>{paper.title}</h3>
 
                 {paper.authors && (
                   <p style={{ minHeight: 0, margin: 0 }}>{paper.authors}</p>
