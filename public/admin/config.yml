@@ -89,6 +89,18 @@ collections:
                 required: false
                 field:
                   { label: "Technology", name: "technology", widget: "string" }
+              - { label: "Project Cover", name: "cover", widget: "image", required: false }
+              - { label: "GitHub URL", name: "github_url", widget: "string", required: false }
+              - { label: "Paper / Report URL", name: "paper_url", widget: "string", required: false }
+              - { label: "PDF Report", name: "pdf", widget: "file", required: false }
+              - label: "Project Status"
+                name: "status"
+                widget: "select"
+                required: false
+                options:
+                  - { label: "Completed", value: "completed" }
+                  - { label: "In Progress", value: "in_progress" }
+                  - { label: "Planned", value: "planned" }
           - label: "Research & Publications"
             name: "research_publications"
             widget: "list"

@@ -97,6 +97,11 @@ const portfolio = {
         title: project.title || "Untitled Project",
         desc: project.description || "",
         tech: cleanList(project.technologies, "technology"),
+        cover: safeLink(project.cover),
+        githubUrl: safeLink(project.github_url),
+        paperUrl: safeLink(project.paper_url),
+        pdf: safeLink(project.pdf),
+        status: project.status || "",
       }))
     : defaults.projects,
 };
@@ -488,11 +493,17 @@ function App() {
                 </div>
 
                 <div className="project-visual">
-                  <div className="visual-core">
-                    <span>{project.num}</span>
-                  </div>
-                  <div className="visual-cross cross-a">+</div>
-                  <div className="visual-cross cross-b">+</div>
+                  {project.cover ? (
+                    <img src={project.cover} alt={project.title} loading="lazy" style={{ width: "100%", height: "100%", objectFit: "cover", position: "absolute", inset: 0 }} />
+                  ) : (
+                    <>
+                      <div className="visual-core">
+                        <span>{project.num}</span>
+                      </div>
+                      <div className="visual-cross cross-a">+</div>
+                      <div className="visual-cross cross-b">+</div>
+                    </>
+                  )}
                 </div>
 
                 <div className="project-tag" style={{ textAlign: "left", alignSelf: "flex-start", width: "100%" }}>{project.tag}</div>
@@ -505,6 +516,18 @@ function App() {
                     <span key={`${tech}-${index}`}>{tech}</span>
                   ))}
                 </div>
+                {project.status && (
+                  <div className="project-tag" style={{ marginTop: "12px" }}>
+                    {({completed:"COMPLETED",in_progress:"IN PROGRESS",planned:"PLANNED"})[project.status] || project.status.toUpperCase()}
+                  </div>
+                )}
+                {(project.githubUrl || project.paperUrl || project.pdf) && (
+                  <div style={{ display: "flex", flexWrap: "wrap", gap: "16px", marginTop: "16px" }}>
+                    {project.githubUrl && <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">GITHUB ↗</a>}
+                    {project.paperUrl && <a href={project.paperUrl} target="_blank" rel="noopener noreferrer">PAPER / REPORT ↗</a>}
+                    {project.pdf && <a href={project.pdf} target="_blank" rel="noopener noreferrer">PDF ↗</a>}
+                  </div>
+                )}
               </article>
             ))}
           </div>
