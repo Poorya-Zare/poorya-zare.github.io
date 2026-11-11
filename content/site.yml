@@ -104,6 +104,26 @@ projects:
     demo_url: https://huggingface.co/spaces/Poorya-Zare/Shaker_AI
     cover: /uploads/neon-shaker-ai-bartender.png
     status: completed
+honors:
+  - image: /uploads/erasmus_bip_award_2025.jpg
+    title: First Place Winner – Erasmus+ BIP 2025
+    programme: Smart Everything – Connecting Artificial Intelligence Tools with
+      Business Ideas
+    organization: "Erasmus+ | RUN–European University "
+    date: 7 April – 16 May 2025
+    location: Burgos, Spain
+    description: >-
+      Awarded **First Place** as part of an international team in the Erasmus+
+      Blended Intensive Programme (BIP), "Smart Everything – Connecting
+      Artificial Intelligence Tools with Business Ideas," hosted in Burgos,
+      Spain.
+
+
+      Contributed as **Project Manager and AI Model Developer** to the development of an AI-powered recipe recommendation system, combining artificial intelligence with a practical business concept.
+
+
+      The programme brought together international participants to develop innovative, technology-driven solutions through interdisciplinary collaboration.
+    evidence_url: https://lnkd.in/p/dwP7T_i6
 research_publications:
   - title: Application of Artificial Intelligence for Prediction, Diagnosis and
       Treatment of Infectious Diseases
