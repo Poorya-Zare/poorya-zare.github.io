@@ -102,6 +102,8 @@ collections:
                 widget: "select"
                 options:
                   - { label: "Published Paper", value: "published_paper" }
+                  - { label: "Bachelor's Thesis", value: "bachelors_thesis" }
+                  - { label: "Master's Thesis", value: "masters_thesis" }
                   - {
                       label: "Research Manuscript",
                       value: "research_manuscript",
