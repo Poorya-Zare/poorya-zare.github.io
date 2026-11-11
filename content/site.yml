@@ -155,7 +155,7 @@ research_publications:
     authors: Poorya Zare Janakbari
     year: 2025
     status: published
-    paper_url: https://urn.fi/URN:NBN:fi:amk-2025060721436?utm_source=chatgpt.com
+    paper_url: https://urn.fi/URN:NBN:fi:amk-2025060721436
     publication_venue: Häme University of Applied Sciences (HAMK)
   - title: "Integrating vision language models into manufacturing automation "
     type: research_manuscript
