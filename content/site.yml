@@ -104,6 +104,21 @@ projects:
     demo_url: https://huggingface.co/spaces/Poorya-Zare/Shaker_AI
     cover: /uploads/neon-shaker-ai-bartender.png
     status: completed
+education:
+  - degree: MSc in Information Technology
+    institution: University of Eastern Finland (UEF)
+    period: 2026 – Present
+    location: Joensuu, Finland
+  - degree: BSc in Computer Applications
+    institution: Häme University of Applied Sciences (HAMK)
+    period: 2023 – 2025
+    location: Hämeenlinna, Finland
+    gpa: "GPA: 4.78 / 5.00"
+  - degree: Bachelor of Law (LL.B.)
+    institution: University of Applied Sciences
+    period: 2014 – 2019
+    location: Rasht, Iran
+    gpa: "GPA: 19.07 / 20 — Top-Ranked Student"
 honors:
   - image: /uploads/erasmus_bip_award_2025.jpg
     title: First Place Winner – Erasmus+ BIP 2025
