@@ -114,6 +114,8 @@ collections:
                   required: false,
                   hint: "List authors as they appear on the work",
                 }
+              - { label: "Conference / Journal Name", name: "publication_venue", widget: "string", required: false }
+              - { label: "Publisher", name: "publisher", widget: "string", required: false }
               - {
                   label: "Year",
                   name: "year",
