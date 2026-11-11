@@ -102,6 +102,18 @@ collections:
                   - { label: "Completed", value: "completed" }
                   - { label: "In Progress", value: "in_progress" }
                   - { label: "Planned", value: "planned" }
+          - label: "Education"
+            name: "education"
+            widget: "list"
+            required: false
+            collapsed: true
+            summary: "{{fields.degree}} — {{fields.institution}}"
+            fields:
+              - { label: "Degree", name: "degree", widget: "string" }
+              - { label: "University / Institution", name: "institution", widget: "string" }
+              - { label: "Period", name: "period", widget: "string" }
+              - { label: "Location", name: "location", widget: "string", required: false }
+              - { label: "GPA / Distinction", name: "gpa", widget: "string", required: false }
           - label: "Honors & Achievements"
             name: "honors"
             widget: "list"

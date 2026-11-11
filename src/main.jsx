@@ -90,6 +90,7 @@ const portfolio = {
     ? cms.research_domains
     : defaultDomains,
   publications,
+  education: Array.isArray(cms.education) ? cms.education.filter((item) => item && item.degree && item.institution) : [],
   honors: Array.isArray(cms.honors) ? cms.honors.filter((item) => item && item.title).map((item) => ({ ...item, image: safeLink(item.image), evidenceUrl: safeLink(item.evidence_url) })) : [],
   projects: Array.isArray(cms.projects)
     ? cms.projects.map((project, index) => ({
@@ -569,6 +570,28 @@ function App() {
                   {(honor.date || honor.location) && <p style={{ minHeight: "auto" }}>{[honor.date, honor.location].filter(Boolean).join(" | ")}</p>}
                   {honor.description && <p>{honor.description}</p>}
                   {honor.evidenceUrl && <a href={honor.evidenceUrl} target="_blank" rel="noopener noreferrer" aria-label="View award evidence">VIEW EVIDENCE ↗</a>}
+                </article>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {portfolio.education.length > 0 && (
+          <section className="section wrap" id="education">
+            <div className="section-head">
+              <span className="section-index">ACADEMIC BACKGROUND</span>
+              <h2>EDUCATION<em>.</em></h2>
+            </div>
+            <div className="education-list">
+              {portfolio.education.map((item, index) => (
+                <article className="education-item" key={`${item.degree}-${index}`}>
+                  <div className="education-period">{item.period}</div>
+                  <div className="education-details">
+                    <h3>{item.degree}</h3>
+                    <p className="education-institution">{item.institution}</p>
+                    {item.location && <p className="education-meta">{item.location}</p>}
+                    {item.gpa && <p className="education-meta">{item.gpa}</p>}
+                  </div>
                 </article>
               ))}
             </div>
