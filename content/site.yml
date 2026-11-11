@@ -58,6 +58,9 @@ research_publications:
     year: 2025
     status: published
     paper_url: https://doi.org/10.1109/ICCAD64771.2025.11099079
+    publication_venue: 2025 International Conference on Control, Automation and Diagnosis (ICCAD)
+    publisher: IEEE
+    authors: Poorya Zare Janakbari
 skills:
   - PYTHON
   - PYTORCH
