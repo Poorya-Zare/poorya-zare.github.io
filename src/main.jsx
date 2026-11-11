@@ -123,7 +123,7 @@ function Publications() {
   return (
     <section className="section wrap" id="publications">
       <div className="section-head">
-        <span className="section-index">03 / PUBLICATIONS</span>
+        <span className="section-index">04 / PUBLICATIONS</span>
         <h2>
           SELECTED <em>PUBLICATIONS.</em>
         </h2>
@@ -471,7 +471,7 @@ function App() {
         {portfolio.education.length > 0 && (
           <section className="section wrap" id="education">
             <div className="section-head">
-              <span className="section-index">ACADEMIC BACKGROUND</span>
+              <span className="section-index">02 / EDUCATION</span>
               <h2>EDUCATION<em>.</em></h2>
             </div>
             <div className="education-list">
@@ -492,7 +492,7 @@ function App() {
 
         <section className="section wrap" id="research">
           <div className="section-head">
-            <span className="section-index">02 / RESEARCH</span>
+            <span className="section-index">03 / RESEARCH</span>
             <h2>
               RESEARCH <em>DOMAINS.</em>
             </h2>
@@ -517,7 +517,7 @@ function App() {
 
         <section className="section wrap" id="projects">
           <div className="section-head">
-            <span className="section-index">04 / SELECTED WORK</span>
+            <span className="section-index">05 / SELECTED WORK</span>
             <h2>
               FEATURED <em>PROJECTS.</em>
             </h2>
@@ -576,7 +576,7 @@ function App() {
         {portfolio.honors.length > 0 && (
           <section className="section wrap" id="honors">
             <div className="section-head">
-              <span className="section-index">AWARDS / RECOGNITION</span>
+              <span className="section-index">06 / HONORS</span>
               <h2>HONORS &amp; <em>ACHIEVEMENTS.</em></h2>
             </div>
             <div className="project-grid">
@@ -600,7 +600,7 @@ function App() {
 
         <section className="section wrap" id="skills">
           <div className="section-head">
-            <span className="section-index">05 / TOOLKIT</span>
+            <span className="section-index">07 / TOOLKIT</span>
             <h2>
               TECH <em>STACK.</em>
             </h2>
@@ -614,7 +614,7 @@ function App() {
         </section>
 
         <section className="contact section wrap" id="contact">
-          <span className="section-index">06 / CONTACT</span>
+          <span className="section-index">08 / CONTACT</span>
 
           <h2>
             LET'S BUILD
