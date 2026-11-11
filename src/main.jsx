@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 import {
   Github,
   Linkedin,
+  GraduationCap,
   Mail,
   ArrowUpRight,
   Terminal,
@@ -80,6 +81,7 @@ const portfolio = {
   github: cms.contact?.github ?? defaults.github,
   linkedin: cms.contact?.linkedin ?? defaults.linkedin,
   huggingface: safeLink(cms.contact?.huggingface || "https://huggingface.co/Poorya-Zare"),
+  scholar: safeLink(cms.contact?.scholar || "https://scholar.google.com/citations?user=6Z2FJHwAAAAJ"),
   contactDescription: cms.contact?.description ?? defaults.contactDescription,
   skills: Array.isArray(cms.skills)
     ? cleanList(cms.skills, "skill")
@@ -363,6 +365,12 @@ function App() {
                   <span style={{ fontSize: "13px", fontWeight: 800, letterSpacing: "-1px", fontFamily: "monospace" }}>HF</span>
                 </a>
               )}
+              {portfolio.scholar && (
+                <a href={portfolio.scholar} target="_blank" rel="noopener noreferrer" aria-label="Google Scholar" title="Google Scholar">
+                  <GraduationCap size={19} />
+                </a>
+              )}
+
               {portfolio.email && (
                 <a href={`mailto:${portfolio.email}`} aria-label="Email">
                   <Mail size={19} />
