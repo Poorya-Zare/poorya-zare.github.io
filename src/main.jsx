@@ -154,7 +154,7 @@ function Publications() {
                 <h3 style={{ margin: "4px 0" }}>{paper.title}</h3>
 
 <div className="project-tag" style={{ textAlign: "left", alignSelf: "flex-start", width: "100%" }}>
-                  {paper.year || "PUBLICATION"} / PUBLISHED
+                  {paper.year || "YEAR N/A"} / {({published:"PUBLISHED",accepted:"ACCEPTED",under_review:"UNDER REVIEW",submitted:"SUBMITTED",draft:"DRAFT",in_progress:"IN PROGRESS",completed:"COMPLETED"})[paper.status] || "STATUS NOT SPECIFIED"}
                 </div>
 
                                 {paper.publication_venue && (<p style={{ minHeight: 0, margin: 0 }}>Conference / Journal: {paper.publication_venue}</p>)}
