@@ -79,6 +79,7 @@ const portfolio = {
   email: cms.contact?.email ?? defaults.email,
   github: cms.contact?.github ?? defaults.github,
   linkedin: cms.contact?.linkedin ?? defaults.linkedin,
+  huggingface: safeLink(cms.contact?.huggingface || "https://huggingface.co/Poorya-Zare"),
   contactDescription: cms.contact?.description ?? defaults.contactDescription,
   skills: Array.isArray(cms.skills)
     ? cleanList(cms.skills, "skill")
@@ -356,6 +357,11 @@ function App() {
                 </a>
               )}
 
+              {portfolio.huggingface && (
+                <a href={portfolio.huggingface} target="_blank" rel="noopener noreferrer" aria-label="Hugging Face" title="Hugging Face">
+                  <span style={{ fontSize: "13px", fontWeight: 800, letterSpacing: "-1px", fontFamily: "monospace" }}>HF</span>
+                </a>
+              )}
               {portfolio.email && (
                 <a href={`mailto:${portfolio.email}`} aria-label="Email">
                   <Mail size={19} />
