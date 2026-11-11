@@ -1,34 +1,98 @@
-full_name: Poorya Zare Janakbari
-professional_title: AI Researcher | Cybersecurity | Computer Vision
-about: "MSc student in Information Technology at the University of Eastern
-  Finland, working on the reliability and security of AI systems that act in the
-  physical world. My research focuses on vision-language and
-  vision-language-action models for robotics and autonomous UAVs, with an
-  emphasis on careful, reproducible evaluation: understanding how these models
-  behave when their inputs change, and when their decisions can be trusted. I am
-  broadly interested in trustworthy multimodal AI and in building autonomous
-  systems that remain dependable in new and unexpected conditions. A background
-  in IT management and applied machine learning gives me a practical,
-  evidence-driven approach to research."
-projects:
-  - title: Deepfake Detection
-    description: Detection and mitigation of deepfake attacks using computer vision
-      and deep learning.
-    technologies:
-      - Python
-      - EfficientNet
-      - Deep Learning
-  - title: UAV Vision-Language-Action Security
-    description: Investigating the influence of physical directional signs on
-      autonomous UAV navigation models in simulation.
-    technologies:
-      - AeroVLA
-      - Simulation
-      - AI Safety
-  - title: Adversarial Robustness Research
-    description: Evaluating the robustness of AI-powered autonomous systems against
+full_name: "Poorya Zare Janakbari"
+
+professional_title: "AI Researcher | Cybersecurity | Computer Vision"
+
+profile:
+  photo: "/profile.jpg"
+  hero_description: >-
+    Exploring the frontier of intelligent systems,
+    adversarial AI, and autonomous technology security.
+    Turning complex research into real-world impact.
+  availability: "AVAILABLE FOR RESEARCH COLLABORATION"
+
+about: >-
+  MSc student in Information Technology at the University
+  of Eastern Finland, working on the reliability and
+  security of AI systems that act in the physical world.
+  My research focuses on vision-language and
+  vision-language-action models for robotics and autonomous
+  UAVs, with an emphasis on careful, reproducible
+  evaluation: understanding how these models behave when
+  their inputs change, and when their decisions can be
+  trusted. I am broadly interested in trustworthy
+  multimodal AI and in building autonomous systems that
+  remain dependable in new and unexpected conditions.
+  A background in IT management and applied machine
+  learning gives me a practical, evidence-driven approach
+  to research.
+
+research_domains:
+  - title: "ADVERSARIAL AI"
+    icon: "brain"
+    description: >-
+      Studying model behavior and robustness under
       adversarial conditions.
+
+  - title: "CYBERSECURITY"
+    icon: "shield"
+    description: >-
+      Understanding and mitigating threats to
+      intelligent systems.
+
+  - title: "AUTONOMOUS SYSTEMS"
+    icon: "cpu"
+    description: >-
+      Evaluating safety and reliability of
+      AI-powered navigation.
+
+projects:
+  - title: "Deepfake Detection"
+    category: "COMPUTER VISION / SECURITY"
+    description: >-
+      Detection and mitigation of deepfake attacks
+      using computer vision and deep learning.
     technologies:
-      - Adversarial ML
-      - Cybersecurity
-      - Evaluation
+      - "Python"
+      - "EfficientNet"
+      - "Deep Learning"
+
+  - title: "UAV Vision-Language-Action Security"
+    category: "AUTONOMOUS SYSTEMS / AI SAFETY"
+    description: >-
+      Investigating the influence of physical
+      directional signs on autonomous UAV
+      navigation models in simulation.
+    technologies:
+      - "AeroVLA"
+      - "Simulation"
+      - "AI Safety"
+
+  - title: "Adversarial Robustness Research"
+    category: "CYBERSECURITY / RESEARCH"
+    description: >-
+      Evaluating the robustness of AI-powered
+      autonomous systems against adversarial conditions.
+    technologies:
+      - "Adversarial ML"
+      - "Cybersecurity"
+      - "Evaluation"
+
+skills:
+  - "PYTHON"
+  - "PYTORCH"
+  - "TENSORFLOW"
+  - "COMPUTER VISION"
+  - "DEEP LEARNING"
+  - "LINUX"
+  - "PENETRATION TESTING"
+  - "RESEARCH METHODS"
+  - "GIT"
+  - "SIMULATION"
+
+contact:
+  email: "YOUR_EMAIL@example.com"
+  github: "https://github.com/Poorya-Zare"
+  linkedin: "https://www.linkedin.com/"
+  description: >-
+    Open to meaningful research collaborations,
+    innovative projects, and new opportunities.

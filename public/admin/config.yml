@@ -17,7 +17,29 @@ collections:
       - name: "site_content"
         label: "Website Content"
         file: "content/site.yml"
+
         fields:
+          - label: "Profile"
+            name: "profile"
+            widget: "object"
+            collapsed: false
+            fields:
+              - label: "Profile Photo"
+                name: "photo"
+                widget: "image"
+                required: false
+                default: "/profile.jpg"
+
+              - label: "Hero Description"
+                name: "hero_description"
+                widget: "text"
+                required: false
+
+              - label: "Availability Status"
+                name: "availability"
+                widget: "string"
+                required: false
+
           - label: "Full Name"
             name: "full_name"
             widget: "string"
@@ -27,11 +49,34 @@ collections:
             name: "professional_title"
             widget: "string"
             required: true
+            hint: "Separate roles with |"
 
           - label: "About Me"
             name: "about"
             widget: "text"
             required: false
+
+          - label: "Research Domains"
+            name: "research_domains"
+            widget: "list"
+            required: false
+            fields:
+              - label: "Domain Title"
+                name: "title"
+                widget: "string"
+
+              - label: "Description"
+                name: "description"
+                widget: "text"
+
+              - label: "Icon"
+                name: "icon"
+                widget: "select"
+                required: false
+                options:
+                  - "brain"
+                  - "shield"
+                  - "cpu"
 
           - label: "Projects"
             name: "projects"
@@ -41,6 +86,11 @@ collections:
               - label: "Project Title"
                 name: "title"
                 widget: "string"
+
+              - label: "Category"
+                name: "category"
+                widget: "string"
+                required: false
 
               - label: "Description"
                 name: "description"
@@ -54,3 +104,37 @@ collections:
                   label: "Technology"
                   name: "technology"
                   widget: "string"
+
+          - label: "Skills"
+            name: "skills"
+            widget: "list"
+            required: false
+            field:
+              label: "Skill"
+              name: "skill"
+              widget: "string"
+
+          - label: "Contact"
+            name: "contact"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Email"
+                name: "email"
+                widget: "string"
+                required: false
+
+              - label: "GitHub URL"
+                name: "github"
+                widget: "string"
+                required: false
+
+              - label: "LinkedIn URL"
+                name: "linkedin"
+                widget: "string"
+                required: false
+
+              - label: "Contact Description"
+                name: "description"
+                widget: "text"
+                required: false
