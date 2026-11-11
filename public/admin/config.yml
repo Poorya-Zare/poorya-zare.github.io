@@ -7,7 +7,6 @@ backend:
 
 media_folder: "public/uploads"
 public_folder: "/uploads"
-
 publish: true
 
 collections:
@@ -17,124 +16,192 @@ collections:
       - name: "site_content"
         label: "Website Content"
         file: "content/site.yml"
-
         fields:
           - label: "Profile"
             name: "profile"
             widget: "object"
             collapsed: false
             fields:
-              - label: "Profile Photo"
-                name: "photo"
-                widget: "image"
-                required: false
-                default: "/profile.jpg"
-
-              - label: "Hero Description"
-                name: "hero_description"
-                widget: "text"
-                required: false
-
-              - label: "Availability Status"
-                name: "availability"
-                widget: "string"
-                required: false
-
-          - label: "Full Name"
-            name: "full_name"
-            widget: "string"
-            required: true
-
+              - {
+                  label: "Profile Photo",
+                  name: "photo",
+                  widget: "image",
+                  required: false,
+                  default: "/profile.jpg",
+                }
+              - {
+                  label: "Hero Description",
+                  name: "hero_description",
+                  widget: "text",
+                  required: false,
+                }
+              - {
+                  label: "Availability Status",
+                  name: "availability",
+                  widget: "string",
+                  required: false,
+                }
+          - {
+              label: "Full Name",
+              name: "full_name",
+              widget: "string",
+              required: true,
+            }
           - label: "Professional Title"
             name: "professional_title"
             widget: "string"
             required: true
             hint: "Separate roles with |"
-
-          - label: "About Me"
-            name: "about"
-            widget: "text"
-            required: false
-
+          - {
+              label: "About Me",
+              name: "about",
+              widget: "text",
+              required: false,
+            }
           - label: "Research Domains"
             name: "research_domains"
             widget: "list"
             required: false
             fields:
-              - label: "Domain Title"
-                name: "title"
-                widget: "string"
-
-              - label: "Description"
-                name: "description"
-                widget: "text"
-
+              - { label: "Domain Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
               - label: "Icon"
                 name: "icon"
                 widget: "select"
                 required: false
-                options:
-                  - "brain"
-                  - "shield"
-                  - "cpu"
-
+                options: ["brain", "shield", "cpu"]
           - label: "Projects"
             name: "projects"
             widget: "list"
             required: false
             fields:
-              - label: "Project Title"
-                name: "title"
-                widget: "string"
-
-              - label: "Category"
-                name: "category"
-                widget: "string"
-                required: false
-
-              - label: "Description"
-                name: "description"
-                widget: "text"
-
+              - { label: "Project Title", name: "title", widget: "string" }
+              - {
+                  label: "Category",
+                  name: "category",
+                  widget: "string",
+                  required: false,
+                }
+              - { label: "Description", name: "description", widget: "text" }
               - label: "Technologies"
                 name: "technologies"
                 widget: "list"
                 required: false
                 field:
-                  label: "Technology"
-                  name: "technology"
-                  widget: "string"
-
+                  { label: "Technology", name: "technology", widget: "string" }
+          - label: "Research & Publications"
+            name: "research_publications"
+            widget: "list"
+            required: false
+            collapsed: true
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - label: "Type"
+                name: "type"
+                widget: "select"
+                options:
+                  - { label: "Published Paper", value: "published_paper" }
+                  - {
+                      label: "Research Manuscript",
+                      value: "research_manuscript",
+                    }
+                  - { label: "Research Project", value: "research_project" }
+              - {
+                  label: "Authors",
+                  name: "authors",
+                  widget: "string",
+                  required: false,
+                  hint: "List authors as they appear on the work",
+                }
+              - {
+                  label: "Year",
+                  name: "year",
+                  widget: "number",
+                  value_type: "int",
+                  min: 1900,
+                  max: 2100,
+                  required: false,
+                }
+              - label: "Status"
+                name: "status"
+                widget: "select"
+                required: false
+                options:
+                  - { label: "Published", value: "published" }
+                  - { label: "Accepted", value: "accepted" }
+                  - { label: "Under Review", value: "under_review" }
+                  - { label: "Submitted", value: "submitted" }
+                  - { label: "Draft", value: "draft" }
+                  - { label: "In Progress", value: "in_progress" }
+                  - { label: "Completed", value: "completed" }
+              - {
+                  label: "Description / Abstract",
+                  name: "description",
+                  widget: "text",
+                  required: false,
+                }
+              - label: "Keywords"
+                name: "keywords"
+                widget: "list"
+                required: false
+                field: { label: "Keyword", name: "keyword", widget: "string" }
+              - {
+                  label: "Paper / DOI URL",
+                  name: "paper_url",
+                  widget: "string",
+                  required: false,
+                }
+              - {
+                  label: "PDF File",
+                  name: "pdf",
+                  widget: "file",
+                  required: false,
+                }
+              - {
+                  label: "GitHub URL",
+                  name: "github_url",
+                  widget: "string",
+                  required: false,
+                }
+              - {
+                  label: "Related Project Title",
+                  name: "related_project",
+                  widget: "string",
+                  required: false,
+                  hint: "Use the exact title of a project listed above",
+                }
           - label: "Skills"
             name: "skills"
             widget: "list"
             required: false
-            field:
-              label: "Skill"
-              name: "skill"
-              widget: "string"
-
+            field: { label: "Skill", name: "skill", widget: "string" }
           - label: "Contact"
             name: "contact"
             widget: "object"
             required: false
             fields:
-              - label: "Email"
-                name: "email"
-                widget: "string"
-                required: false
-
-              - label: "GitHub URL"
-                name: "github"
-                widget: "string"
-                required: false
-
-              - label: "LinkedIn URL"
-                name: "linkedin"
-                widget: "string"
-                required: false
-
-              - label: "Contact Description"
-                name: "description"
-                widget: "text"
-                required: false
+              - {
+                  label: "Email",
+                  name: "email",
+                  widget: "string",
+                  required: false,
+                }
+              - {
+                  label: "GitHub URL",
+                  name: "github",
+                  widget: "string",
+                  required: false,
+                }
+              - {
+                  label: "LinkedIn URL",
+                  name: "linkedin",
+                  widget: "string",
+                  required: false,
+                }
+              - {
+                  label: "Contact Description",
+                  name: "description",
+                  widget: "text",
+                  required: false,
+                }
