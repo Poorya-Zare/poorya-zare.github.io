@@ -76,6 +76,15 @@ research_publications:
     publisher: Springer Nature
     year: 2025
     status: under_review
+  - title: Machine Learning and Computer Vision for Robust Defense Against Deepfake
+      Threats in Cybersecurity
+    type: research_manuscript
+    authors: Poorya Zare Janakbari
+    publication_venue: " The Fourth International Conference on Optimization and
+      Data Science in Industrial Engineering"
+    publisher: Springer Nature
+    status: accepted
+    year: 2026
 skills:
   - PYTHON
   - PYTORCH
