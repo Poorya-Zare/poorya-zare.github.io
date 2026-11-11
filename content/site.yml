@@ -92,6 +92,8 @@ projects:
     cover: /uploads/reddit-climate-analytics-dashboard.png
     github_url: https://github.com/Poorya-Zare/big-data-climate-project
     status: completed
+    technologies:
+      - Python Apache Spark PySpark MongoDB Spark SQL Pandas Matplotlib
 research_publications:
   - title: Application of Artificial Intelligence for Prediction, Diagnosis and
       Treatment of Infectious Diseases
