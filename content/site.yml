@@ -48,14 +48,23 @@ projects:
       - AI Safety
     cover: /uploads/cyberpunk-drone-security-hud.png
     status: completed
-  - title: Adversarial Robustness Research
-    category: CYBERSECURITY / RESEARCH
-    description: Evaluating the robustness of AI-powered autonomous systems against
-      adversarial conditions.
+  - title: Comparative Robustness of UAV Vision-Language-Action Models
+    category: MASTER'S THESIS / TRUSTWORTHY AI
+    description: >-
+      Ongoing 30 ECTS Master's thesis at the University of Eastern Finland,
+      investigating the comparative adversarial robustness of two
+      Vision-Language-Action (VLA) systems, AeroVLA and SimpleNav, for
+      autonomous UAV navigation in simulation.
+
+
+      The study is designed to evaluate how bounded digital adversarial perturbations and optimized visual patches affect navigation performance, using matched control conditions and shared evaluation criteria.
+
+
+      The research emphasizes closed-loop mission success, attack transferability, navigation behavior, and reproducible statistical analysis to better understand the reliability and security of embodied AI systems.
     technologies:
-      - Adversarial ML
-      - Cybersecurity
-      - Evaluation
+      - Python · PyTorch · Adversarial Machine Learning · Vision-Language-Action
+        Models · UAV Simulation · Robustness Evaluation
+    status: in_progress
   - title: Eye of Sauron — AI-Augmented Security Platform
     description: A modular cybersecurity platform combining security event
       monitoring, intrusion detection, and authorization-controlled asset
