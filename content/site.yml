@@ -85,6 +85,14 @@ research_publications:
     publisher: Springer Nature
     status: accepted
     year: 2026
+  - title: Temporal Deep Learning for Early Warning of Persistent Elevated PPO₂ in
+      Open-Circuit Scuba Diving
+    type: research_manuscript
+    authors: Poorya Zare Janakbari
+    publication_venue: Computer Methods and Programs in Biomedicine
+    publisher: Elsevier
+    year: 2026
+    status: submitted
 skills:
   - PYTHON
   - PYTORCH
