@@ -59,13 +59,7 @@ const defaultDomains = [
 ];
 
 const publications = Array.isArray(cms.research_publications)
-  ? cms.research_publications.filter(
-      (item) =>
-        item &&
-        item.title &&
-        item.type === "published_paper" &&
-        item.status === "published",
-    )
+  ? cms.research_publications.filter((item) => item && item.title)
   : [];
 
 const portfolio = {
@@ -152,7 +146,7 @@ function Publications() {
               >
                 <div className="project-top">
                   <span>
-                    {String(index + 1).padStart(2, "0")} / PUBLISHED PAPER
+                    {String(index + 1).padStart(2, "0")} / {({published_paper:"PUBLISHED PAPER",bachelors_thesis:"BACHELOR'S THESIS",masters_thesis:"MASTER'S THESIS",research_manuscript:"RESEARCH MANUSCRIPT",research_project:"RESEARCH PROJECT"})[paper.type] || "RESEARCH WORK"}
                   </span>
                   <FileText size={20} />
                 </div>
