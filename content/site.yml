@@ -66,6 +66,23 @@ projects:
       - Python FastAPI PostgreSQL Redis React Docker
     cover: /uploads/eye-of-sauron-cybersecurity-dashboard.png
     status: in_progress
+  - title: Marginum Analyzer — AI-Assisted Signal Analysis for Tumour Margin Detection
+    category: Biomedical Signal Processing · Machine Learning
+    description: >-
+      Industrial group project (University of Eastern Finland, with Marginum)
+      analysing two-channel fluorescence signals recorded while tumour tissue
+      passes through a surgical suction tube.
+
+
+      I coordinated the team and designed the system architecture. We built a desktop application that turns multi-gigabyte recordings (up to 7 GB, 843 million samples per channel) into binary data, detects tissue peaks with a two-channel method, and lets users explore any recording from a 4-hour overview down to single samples.
+
+
+      Because no labelled data existed, we built a signal simulator matched to the real recordings to measure detector accuracy (precision 98.5%) and to train machine-learning models. The models reject artefacts, detect overlapping tissue pieces (F1 0.58 → 0.86), and estimate each piece's fluorescence level; the fluorescence model correctly identified the concentration of all 9 real recordings it had not seen. The piece count showed a strong linear relation to tumour volume (R² 0.99).
+    technologies:
+      - Python NumPy pandas SciPy scikit-learn PySide6 (Qt) pyqtgraph Matplotlib
+        Plotly Git
+    cover: /uploads/marginum-analyzer_-fluorescence-meets-ai.png
+    status: in_progress
 research_publications:
   - title: Application of Artificial Intelligence for Prediction, Diagnosis and
       Treatment of Infectious Diseases
