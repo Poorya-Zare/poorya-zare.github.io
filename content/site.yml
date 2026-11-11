@@ -51,6 +51,13 @@ projects:
       - Adversarial ML
       - Cybersecurity
       - Evaluation
+research_publications:
+  - title: Application of Artificial Intelligence for Prediction, Diagnosis and
+      Treatment of Infectious Diseases
+    type: published_paper
+    year: 2025
+    status: published
+    paper_url: https://doi.org/10.1109/ICCAD64771.2025.11099079
 skills:
   - PYTHON
   - PYTORCH
