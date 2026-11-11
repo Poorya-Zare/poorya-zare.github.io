@@ -45,7 +45,6 @@ projects:
       - AeroVLA
       - Simulation
       - AI Safety
-      - null
     cover: /uploads/cyberpunk-drone-security-hud.png
     status: completed
   - title: Adversarial Robustness Research
@@ -83,6 +82,15 @@ projects:
         Plotly Git
     cover: /uploads/marginum-analyzer_-fluorescence-meets-ai.png
     status: in_progress
+  - title: Reddit Climate Change Analysis — Big Data Analytics
+    category: BIG DATA / DATA ENGINEERING
+    description: An academic team project analyzing over 620,000 Reddit posts about
+      climate change using Apache Spark and MongoDB. The pipeline includes data
+      cleaning, distributed processing with PySpark, Spark SQL and MongoDB
+      aggregation queries, performance comparison, and data visualization to
+      uncover patterns in climate-related discussions.
+    cover: /uploads/reddit-climate-analytics-dashboard.png
+    github_url: https://github.com/Poorya-Zare/big-data-climate-project
 research_publications:
   - title: Application of Artificial Intelligence for Prediction, Diagnosis and
       Treatment of Infectious Diseases
