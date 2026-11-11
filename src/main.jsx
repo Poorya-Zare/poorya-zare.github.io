@@ -90,6 +90,7 @@ const portfolio = {
     ? cms.research_domains
     : defaultDomains,
   publications,
+  honors: Array.isArray(cms.honors) ? cms.honors.filter((item) => item && item.title).map((item) => ({ ...item, image: safeLink(item.image), evidenceUrl: safeLink(item.evidence_url) })) : [],
   projects: Array.isArray(cms.projects)
     ? cms.projects.map((project, index) => ({
         num: String(index + 1).padStart(2, "0"),
@@ -548,6 +549,31 @@ function App() {
             ))}
           </div>
         </section>
+
+        {portfolio.honors.length > 0 && (
+          <section className="section wrap" id="honors">
+            <div className="section-head">
+              <span className="section-index">AWARDS / RECOGNITION</span>
+              <h2>HONORS &amp; <em>ACHIEVEMENTS.</em></h2>
+            </div>
+            <div className="project-grid">
+              {portfolio.honors.map((honor, index) => (
+                <article className="project" key={`${honor.title}-${index}`}>
+                  {honor.image && (
+                    <img src={honor.image} alt={honor.title} loading="lazy" style={{ width: "100%", height: "190px", objectFit: "cover", marginBottom: "18px" }} />
+                  )}
+                  <div className="project-tag">INTERNATIONAL ACHIEVEMENT</div>
+                  <h3>{honor.title}</h3>
+                  {honor.programme && <p style={{ minHeight: "auto" }}>{honor.programme}</p>}
+                  {honor.organization && <div className="project-tag">{honor.organization}</div>}
+                  {(honor.date || honor.location) && <p style={{ minHeight: "auto" }}>{[honor.date, honor.location].filter(Boolean).join(" | ")}</p>}
+                  {honor.description && <p>{honor.description}</p>}
+                  {honor.evidenceUrl && <a href={honor.evidenceUrl} target="_blank" rel="noopener noreferrer" aria-label="View award evidence">VIEW EVIDENCE ↗</a>}
+                </article>
+              ))}
+            </div>
+          </section>
+        )}
 
         <section className="section wrap" id="skills">
           <div className="section-head">

@@ -102,6 +102,21 @@ collections:
                   - { label: "Completed", value: "completed" }
                   - { label: "In Progress", value: "in_progress" }
                   - { label: "Planned", value: "planned" }
+          - label: "Honors & Achievements"
+            name: "honors"
+            widget: "list"
+            required: false
+            collapsed: true
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Award Title", name: "title", widget: "string" }
+              - { label: "Programme", name: "programme", widget: "string", required: false }
+              - { label: "Organization", name: "organization", widget: "string", required: false }
+              - { label: "Date", name: "date", widget: "string", required: false }
+              - { label: "Location", name: "location", widget: "string", required: false }
+              - { label: "Description", name: "description", widget: "text", required: false }
+              - { label: "Award Photo", name: "image", widget: "image", required: false }
+              - { label: "Evidence / LinkedIn URL", name: "evidence_url", widget: "string", required: false }
           - label: "Research & Publications"
             name: "research_publications"
             widget: "list"
