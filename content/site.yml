@@ -1,8 +1,8 @@
 profile:
   photo: /profile.jpg
-  hero_description: Exploring the frontier of intelligent systems, adversarial AI,
-    and autonomous technology security. Turning complex research into real-world
-    impact.
+  hero_description: Exploring trustworthy and reliable AI, with a focus on the
+    robustness, safety, and security of multimodal models and autonomous
+    systems. Bridging rigorous research and real-world applications.
   availability: AVAILABLE FOR RESEARCH COLLABORATION
 full_name: Poorya Zare Janakbari
 professional_title: AI Researcher | Cybersecurity | Computer Vision
@@ -17,9 +17,10 @@ about: "MSc student in Information Technology at the University of Eastern
   in IT management and applied machine learning gives me a practical,
   evidence-driven approach to research."
 research_domains:
-  - title: ADVERSARIAL AI
+  - title: TRUSTWORTHY & RELIABLE AI
     icon: brain
-    description: Studying model behavior and robustness under adversarial conditions.
+    description: Investigating the reliability, robustness, and trustworthiness of
+      multimodal AI systems through rigorous and reproducible evaluation.
   - title: CYBERSECURITY
     icon: shield
     description: Understanding and mitigating threats to intelligent systems.
