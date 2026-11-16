@@ -16,4 +16,4 @@
 
 /* Prevent horizontal overflow from decorative elements */
 html,body{max-width:100%;overflow-x:clip}
-#root{width:100%;overflow-x:clip}
+#root{position:relative;width:100%;overflow:hidden}
