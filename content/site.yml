@@ -51,10 +51,10 @@ projects:
   - title: Comparative Robustness of UAV Vision-Language-Action Models
     category: MASTER'S THESIS / TRUSTWORTHY AI
     description: >-
-      Ongoing 30 ECTS Master's thesis at the University of Eastern Finland,
-      investigating the comparative adversarial robustness of two
-      Vision-Language-Action (VLA) systems, AeroVLA and SimpleNav, for
-      autonomous UAV navigation in simulation.
+      Master's thesis at the University of Eastern Finland, investigating the
+      comparative adversarial robustness of two Vision-Language-Action (VLA)
+      systems, AeroVLA and SimpleNav, for autonomous UAV navigation in
+      simulation.
 
 
       The study is designed to evaluate how bounded digital adversarial perturbations and optimized visual patches affect navigation performance, using matched control conditions and shared evaluation criteria.
@@ -65,7 +65,7 @@ projects:
       - Python · PyTorch · Adversarial Machine Learning · Vision-Language-Action
         Models · UAV Simulation · Robustness Evaluation
     status: in_progress
-    cover: /uploads/comparative-robustness_-uav-vla-evaluation.png
+    cover: /uploads/uav-model-robustness-comparison.png
   - title: Eye of Sauron — AI-Augmented Security Platform
     description: A modular cybersecurity platform combining security event
       monitoring, intrusion detection, and authorization-controlled asset
