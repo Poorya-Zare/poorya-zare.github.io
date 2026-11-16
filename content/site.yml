@@ -65,6 +65,7 @@ projects:
       - Python · PyTorch · Adversarial Machine Learning · Vision-Language-Action
         Models · UAV Simulation · Robustness Evaluation
     status: in_progress
+    cover: /uploads/comparative-robustness_-uav-vla-evaluation.png
   - title: Eye of Sauron — AI-Augmented Security Platform
     description: A modular cybersecurity platform combining security event
       monitoring, intrusion detection, and authorization-controlled asset
