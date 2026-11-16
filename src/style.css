@@ -13,3 +13,7 @@
 
 /* Mobile layout correction */
 @media(max-width:680px){.hero,.hero-copy,.hero-art,.about-grid,.domain-grid,.project-grid,.project,.education-item,.education-details,.terminal-card{min-width:0}.hero-art{overflow:hidden}.section h2{font-size:clamp(28px,8vw,40px);letter-spacing:-1px;overflow-wrap:anywhere}.hero h1,.contact h2,.brand,.education-details h3,.education-institution,.terminal-card code{overflow-wrap:anywhere}.terminal-card code{white-space:normal}.hero-social{flex-wrap:wrap}}
+
+/* Prevent horizontal overflow from decorative elements */
+html,body{max-width:100%;overflow-x:clip}
+#root{width:100%;overflow-x:clip}
