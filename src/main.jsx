@@ -364,7 +364,7 @@ function App() {
 
               {portfolio.huggingface && (
                 <a href={portfolio.huggingface} target="_blank" rel="noopener noreferrer" aria-label="Hugging Face" title="Hugging Face">
-                  <span style={{ fontSize: "13px", fontWeight: 800, letterSpacing: "-1px", fontFamily: "monospace" }}>HF</span>
+                  <img src="/huggingface.svg" alt="" aria-hidden="true" style={{ width: "27px", height: "27px" }} />
                 </a>
               )}
               {portfolio.scholar && (
